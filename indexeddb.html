@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>IndexedDB API</title>
+  <link rel="stylesheet" href="indexeddb.css">
+  <script src="indexed.js"></script>
+</head>
+<body>
+  <section id="cajaformulario">
+    <form name="formulario">
+      <input type="text" id="dni" placeholder="Introduzca DNI" ><p></p>
+      <input type="text" id="nombre" placeholder="Introduzca Nombre" > <p></p>
+      <input type="text" id="apellidos" placeholder="Introduzca Apellidos" ><p></p>
+      <button type="button" onclick="anadir();">Guardar</button>
+    </form>
+    <hr>
+    <div id="elements">
+      <table>
+        <caption>Personas</caption>
+        <thead>
+          <tr>
+            <th>DNI</th>
+            <th>Nombre</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody id="elementsList">
+          <tr>
+            <td colspan="3">No hay elementos</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <button type="button" onclick="leerTodosPorNombre();">Ordenar por nombre</button>
+
+      <form name="formulario1">
+        <hr>
+        <p> Introduzca Modificaciones </p>
+        ID<br/><input type="text" id="id_modi" disabled><p></p>
+        DNI<br/><input type="text" id="dni_modi"><p></p>
+        Nombre<br/><input type="text" id="nombre_modi"><p></p>
+        Apellidos<br/><input type="text" id="apellidos_modi"><p></p>
+        <button type="button" onclick="actualizar();">Actualizar</button>
+      </form>
+
+  </section> 
+</body>
+</html>
