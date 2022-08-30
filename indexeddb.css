@@ -1,6 +1,119 @@
-#cajaformulario{
+#cajaformulario {
     float: left;
     padding: 20px;
     border: 1px solid #999999;
+}
+
+#elementsList #apellidos {
+    display: none;
+}
+
+@media screen and (max-width:420px) {
+    #cajaformulario {
+
+        width: 100%;
+        height: 100%;
+        margin-right: 5%;
+
+
+
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+
+
+
+    }
+
+    table button {
+        margin-top: 10px;
+    }
+
+    #boton-ordenar {
+        margin-top: 20px;
+    }
+
+    tbody tr td {
+        float: left;
+        margin-top: 1px;
+        margin-bottom: 1px;
+
+        text-align: center;
+        padding-bottom: 20px;
+        padding: 10px 0px;
+        display: flex;
+
+
+    }
+
+    thead {
+        display: none;
+    }
+
+    table thead {
+        width: 10px;
+    }
+
+    thead tr th {
+        height: 10px;
+    }
+
+    tbody tr td button {
+        margin-right: 1px;
+        margin-left: 1px;
+        margin-top: 1px;
+        width: 70px;
+
+    }
+
+
+    body section form {
+        margin: 10% 0;
+    }
+
+    div caption {
+        width: 100%;
+
+    }
+
+    table caption {
+        margin-bottom: 10px;
+    }
+
+    #title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #elementsList #apellidos {
+        display: block;
+
+    }
+
+    #elementsList #nombre {
+        display: block;
+        margin-right: 5px;
+
+
+    }
+
+    #elementsList #dni {
+        margin-right: 20px;
+        display: block;
+
+    }
+
+    form p {
+        font-size: 1.2em;
+
+    }
+
+
 }
 
