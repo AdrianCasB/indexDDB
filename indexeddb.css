@@ -8,6 +8,10 @@
     display: none;
 }
 
+form p{
+    font-size:1.2em;
+    margin-top:5px;
+
 @media screen and (max-width:420px) {
     #cajaformulario {
 
