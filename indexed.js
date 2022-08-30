@@ -96,8 +96,9 @@ function leerTodos() {
     for (var key in elements) {
       outerHTML += '\n\
       <tr>\n\
-      <td>' + elements[key].dni + '</td>\n\
-      <td>' + elements[key].nombre + '</td>\n\
+      <td id="dni">' + elements[key].dni + '</td>\n\
+      <td id="nombre">' + elements[key].nombre + '</td>\n\
+      <td id="apellidos">' + elements[key].apellidos + '</td>\n\
       <td>\n\
 	  <button type="button" onclick="leer(' + elements[key].id + ')">Detalles</button>\n\
 	  <button type="button" onclick="baja(' + elements[key].id + ')">Baja</button>\n\
@@ -240,10 +241,6 @@ function actualizar(){
     leerTodos();
   }
 }
-
-
-  
-
 
 
 window.addEventListener('load', iniciarDB, false);
